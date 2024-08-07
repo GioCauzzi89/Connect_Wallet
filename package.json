@@ -2,7 +2,7 @@
   "name": "rainbowkit-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<username>.github.io/<repository-name>",
+  "homepage": "https://github.com/GioCauzzi89/Connect_Wallet.git",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
