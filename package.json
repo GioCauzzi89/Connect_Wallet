@@ -5,7 +5,11 @@
   "homepage": "https://github.com/GioCauzzi89/Connect_Wallet.git",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^0.1.0",
