@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { ConnectButton, useAccount } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { useAccount, useConnect, useDisconnect } from 'wagmi';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
