@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "lint": "next lint",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^0.1.0",
@@ -21,3 +23,5 @@
     "eslint-config-next": "12.1.6"
   }
 }
+
+
