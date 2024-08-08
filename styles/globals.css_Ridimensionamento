@@ -1,0 +1,20 @@
+/* Esempio di CSS per adattare la tua app */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Impedisce la barra di scorrimento */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Assicurati che l'altezza sia al 100% della finestra */
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 1200px; /* Regola secondo le tue esigenze */
+    padding: 20px;
+  }
+  
