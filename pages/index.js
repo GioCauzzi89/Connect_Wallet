@@ -6,14 +6,17 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const { isConnected } = useAccount();
+  const { connect, connectors } = useConnect();
+  const { disconnect } = useDisconnect();
 
   useEffect(() => {
-    // Se non connesso, apri la finestra di collegamento
     if (!isConnected) {
-      const button = document.querySelector('button[data-rainbowkit-button]');
-      if (button) button.click(); // Simula il clic sul pulsante Connect Wallet
+      // Se non è connesso, tentare di connettere il primo wallet disponibile
+      if (connectors.length > 0) {
+        connect(connectors[0]); // Connetti al primo wallet disponibile
+      }
     }
-  }, [isConnected]);
+  }, [isConnected, connectors, connect]);
 
   return (
     <div className={styles.container}>
@@ -31,6 +34,7 @@ export default function Home() {
           Welcome to this demo of <a href="https://www.rainbowkit.com/">RainbowKit</a>
         </h1>
 
+        {/* Puoi mantenere il pulsante se desideri permettere la connessione/disconnessione manuale */}
         <ConnectButton />
       </main>
     </div>
