@@ -1,7 +1,8 @@
 {
   "name": "rainbowkit-demo",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://github.com/GioCauzzi89/Connect_Wallet.git",
+  
   "scripts": {
     "dev": "next dev",
     "build": "react-scripts build",
